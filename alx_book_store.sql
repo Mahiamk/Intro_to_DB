@@ -54,3 +54,9 @@ CREATE TABLE Order_Details (
     FOREIGN KEY (order_id) REFERENCES Orders(order_id),
     FOREIGN KEY (book_id) REFERENCES Books(book_id)
 );
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'root123';
+FLUSH PRIVILEGES;
+EXIT;
+-- End of alx_book_store database schema
+
